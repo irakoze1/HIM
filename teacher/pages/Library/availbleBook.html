@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+       <div class="container">
+        <!--NAVIGATION-->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                        <span class="title"><h2>TEACHER</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-dashboard" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+             
+                <li>
+                    <a href="../Library/index.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Library</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../student/index.html">
+                        <span class="icon"><i class="fa fa-mortar-board" aria-hidden="true"></i></span>
+                        <span class="title">Students</span>
+                    </a>
+                </li>
+            
+                    </a>
+                <li>
+                    <a href="../course/index.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../../index.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../Login/index.html">
+                        <span class="icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Change Password </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- hearder -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="image/user.jpeg" alt="">
+                </div>
+            </div>
+
+                       <div class="cardBox">
+                
+                <div class="card">
+                    <div>
+                        <div class="text"> <i class="fa fa-book " style="color:white;"></i>  &nbsp;<a href="../course/index.html" style="text-decoration: none;color: white;">Courses</a></div>
+                        <div class="cardName">courses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-tick" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="text"> <i class="fa fa-calendar " style="color:white;"></i> &nbsp; <a href="../course/timetable.html" style="text-decoration: none;color: white;">Time Table</a></div>
+                        <div class="cardName">courses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-tick" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                      <div class="text"> <i class="fa fa-book" aria-hidden="true" style="color:white;"></i> &nbsp;<a href="bookIssued.html" style="text-decoration: none;color: white;">Book Issued</a></div>
+                        <div class="cardName">Library</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-hour" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+             <h2 style="text-align: center;">List of books</h2>
+            <!-- menu -->
+            <div class="details">
+               
+
+                                <!-- purchase form -->
+                <div class="rencetOrders">
+                    <div class="cardHeader">
+                       
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr >
+                                <th>Book Name</th>
+                                <th>Author</th>
+                                <th>Category</th>
+                                <th>ISBN</th>
+                                <th>Action</th>
+                             
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>java programming</td>
+                                <td>Patrick shriver IRAKOZE</td>
+                                <td>programming</td>
+                                <td>1234</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                   &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>C++ programming</td>
+                                <td>Dalton Fricotin</td>
+                                <td>programming</td>
+                                <td>4234</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                 &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Politics and freedom</td>
+                                <td>Augustin Liboudingue</td>
+                                <td>Politics</td>
+                                <td>1567</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                  &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Unce upon time </td>
+                                <td>Patrick shriver IRAKOZE</td>
+                                <td>History</td>
+                                <td>3356</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                  &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>World Geographier</td>
+                                <td>Thierry Croquignole</td>
+                                <td>Geaography</td>
+                                <td>6678</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                  &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Project Managment with GANTT</td>
+                                <td>Patrick shriver IRAKOZE</td>
+                                <td>programming</td>
+                                <td>4566</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                  &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Religion in ADC</td>
+                                <td>Dalton Fricotin </td>
+                                <td>History</td>
+                                <td>2789</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Communication and Technology</td>
+                                <td>Patrick shriver IRAKOZE</td>
+                                <td>Science and Technology</td>
+                                <td>1234</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Financial Mathematics</td>
+                                <td>PAlix KANYAMUNEZA</td>
+                                <td>science</td>
+                                <td>7234</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                   &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Introduction in c# language</td>
+                                <td>Patrick shriver IRAKOZE</td>
+                                <td>programming</td>
+                                <td>2378</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                  &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                                <tr>
+                                <td>Entreprenariat in Modern world</td>
+                                <td>Benie Bucici Bernard</td>
+                                <td>science </td>
+                                <td>6784</td>
+                                <td>
+                                 <button class="btn_tableActve">Active</button> 
+                                  &nbsp;
+                                 <button class="btn_tableInactve"> Inactive</button>
+                                </td>
+                              
+                            </tr>
+                          
+                        </tbody>
+                     
+                    </table>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        // addrow
+    </script>
+</body>
+</html>

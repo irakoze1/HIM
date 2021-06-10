@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+       <div class="container">
+        <!--NAVIGATION-->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                        <span class="title"><h2>TEACHER</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-dashboard" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+             
+                <li>
+                    <a href="../Library/index.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Library</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../student/index.html">
+                        <span class="icon"><i class="fa fa-mortar-board" aria-hidden="true"></i></span>
+                        <span class="title">Students</span>
+                    </a>
+                </li>
+             
+                    </a>
+                <li>
+                    <a href="../course/index.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../../index.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../Login/index.html">
+                        <span class="icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Change Password </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- hearder -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="image/user.jpeg" alt="">
+                </div>
+            </div>
+
+                       <div class="cardBox">
+                
+                <div class="card">
+                    <div>
+                        <div class="text"> <i class="fa fa-book " style="color:white;"></i>  &nbsp;<a href="../course/index.html" style="text-decoration: none;color: white;">Courses</a></div>
+                        <div class="cardName">courses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-tick" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="text"> <i class="fa fa-calendar " style="color:white;"></i>  &nbsp;<a href="../course/timetable.html" style="text-decoration: none;color: white;">Time Table</a></div>
+                        <div class="cardName">courses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-tick" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                      <div class="text">  <i class="fa fa-pencil-square-o" style="color:white;"></i> &nbsp; <a href="../course/declareStudent.html style=" style="text-decoration: none;color: white;">Claim Students</a></div>
+                        <div class="cardName">Students</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-hour" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+             <h2 style="text-align: center;">LIBRARY</h2>
+            <!-- menu -->
+         <div class="corps">
+		
+				<div class="corps-contents">
+					<a href="availbleBook.html"   class="corps-items">
+                      
+						<span>  
+                             <i class="fa fa-book"></i> 
+                             List of Books <br> 
+                              <b>11</b>
+                            </span>
+					</a>
+					<a href="bookIssued.html" class="corps-items">
+						
+						<span> 
+                            <i class="fa fa-book"></i>  
+                            Issued Book  <br>
+                             <b>3</b>
+                        </span>
+					</a>
+                   
+				</div>
+                
+
+			</div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>

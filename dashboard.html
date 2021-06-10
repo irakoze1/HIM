@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./pages/staff/dycalendar.css">
+</head>
+<body>
+    <div class="containe">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Admin</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-dashboard" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/staff/index.html">
+                        <span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                        <span class="title">Manage Staff</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./teacher/index.html">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Manage Teachers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./student/index.html">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Manage Students</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../settings/index.html">
+                        <span class="icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Change Password </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <h2 style="text-align: center;">Welcome To Admin Dashboard</h2>
+                <div class="user">
+                    <img src="image/user.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">10,024</div>
+                        <div class="cardName">Studens</div>
+                    </div>
+                    <div class="iconBox icon">
+                        <i class="fa fa-mortar-board" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">55</div>
+                        <div class="cardName">Staff</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">195</div>
+                        <div class="cardName">Teachers</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">324</div>
+                        <div class="cardName">Courses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- destails 2 -->
+            <section>
+                <div class="container">
+                    <div class="card">
+                        <div class="box">
+                            <div>
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2>90<span>%</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">Attendance</div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div>
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2>85<span>%</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">Success</div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div>
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2>55<span>%</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">Delay</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="details">
+                <div class="rencetOrderslist">
+                    <div class="cardHeader">
+                        <h2>Attedances Percentange Details</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>Admin No.</td>
+                                <td>Student Name</td>
+                                <td>Total Present</td>
+                                <td>Total Absent</td>
+                                <td>Total OnDuty</td>
+                                <td>Total Hours</td>
+                                <td>Percentage</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>67231</td>
+                                <td>Arakaza Alain Briand</td>
+                                <td><span class="status delivered">12</span></td>
+                                <td><span class="status red">3</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">45</span></td>
+                                <td><span class="status pending">85,95%</span></td>
+                            </tr>
+                            <tr>
+                                <td>167956</td>
+                                <td>Buberintwari Patience</td>
+                                <td><span class="status delivered">10</span></td>
+                                <td><span class="status red">5</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">60</span></td>
+                                <td><span class="status pending">75,95%</span></td>
+                            </tr>
+                            <tr>
+                                <td>67231</td>
+                                <td>Irakoze Dalton</td>
+                                <td><span class="status delivered">8</span></td>
+                                <td><span class="status red">7</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">45</span></td>
+                                <td><span class="status pending">65,95%</span></td>
+                            </tr>
+                            <tr>
+                                <td>567956</td>
+                                <td>Irakoze Patrick</td>
+                                <td><span class="status delivered">9</span></td>
+                                <td><span class="status red">6</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">60</span></td>
+                                <td><span class="status pending">68,55%</span></td>
+                            </tr>
+                            <tr>
+                                <td>867231</td>
+                                <td>Ishime Elodie</td>
+                                <td><span class="status delivered">12</span></td>
+                                <td><span class="status red">3</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">45</span></td>
+                                <td><span class="status pending">78,25%</span></td>
+                            </tr>
+                            <tr>
+                                <td>267956</td>
+                                <td>Kanyamuneza Alix</td>
+                                <td><span class="status delivered">15</span></td>
+                                <td><span class="status red">0</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">60</span></td>
+                                <td><span class="status pending">98,95%</span></td>
+                            </tr>
+                            <tr>
+                                <td>147956</td>
+                                <td>Kubwubuntu Sampras</td>
+                                <td><span class="status delivered">10</span></td>
+                                <td><span class="status red">5</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">45</span></td>
+                                <td><span class="status pending">65,75%</span></td>
+                            </tr>
+                            <tr>
+                                <td>2767956</td>
+                                <td>Muciro Jean Bernard</td>
+                                <td><span class="status delivered">13</span></td>
+                                <td><span class="status red">2</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">45</span></td>
+                                <td><span class="status pending">95,95%</span></td>
+                            </tr>
+                            <tr>
+                                <td>367956</td>
+                                <td>Nyandwi Augustin</td>
+                                <td><span class="status delivered">15</span></td>
+                                <td><span class="status red">0</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">45</span></td>
+                                <td><span class="status pending">77,45%</span></td>
+                            </tr>
+                            <tr>
+                                <td>167956</td>
+                                <td>Sangwe Millena</td>
+                                <td><span class="status delivered">14</span></td>
+                                <td><span class="status red">1</span></td>
+                                <td><span class="status black">0</span></td>
+                                <td><span class="status blue">45</span></td>
+                                <td><span class="status pending">95,05%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Academic Staff</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="image/user.jpg" alt=""></div></td>
+                                <td><h4>Kana <br><span>Burundi</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="image/user.jpg" alt=""></div></td>
+                                <td><h4>Oliva <br><span>Niger</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="image/user.jpg" alt=""></div></td>
+                                <td><h4>Patrick <br><span>Congo</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="image/user.jpg" alt=""></div></td>
+                                <td><h4>Odinga <br><span>Kenya</span></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>My Leave Calendar</h2>
+                    </div>
+                    <section class="sece">
+                        <div class="boxs">
+                            <div class="containers">
+                                <div id="dycalendar"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+        <script src="./pages/staff/dycalendar.js"></script>
+        <script>
+            dycalendar.draw({
+                target: '#dycalendar',
+                type: 'month',
+                dayformat: 'full',
+                monthformat: 'full',
+                highlighttargetdate: true,
+                prevnextbutton: 'show',
+    
+            })
+        </script>
+</body>
+</html>

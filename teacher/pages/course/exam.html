@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="containers">
+             <!--NAVIGATION-->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                        <span class="title"><h2>TEACHER</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-dashboard" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../Library/index.html">
+                        <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                        <span class="title">Library</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../student/index.html">
+                        <span class="icon"><i class="fa fa-mortar-board" aria-hidden="true"></i></span>
+                        <span class="title">Students</span>
+                    </a>
+                </li>
+            
+                    </a>
+                <li>
+                    <a href="../course/index.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../../index.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../Login/index.html">
+                        <span class="icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Change Password </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+               
+                <div class="user">
+                    <img src="image/user.jpeg" alt="">
+                </div>
+            </div>
+
+        
+         <!-- Menu -->
+            <div class="cardBox">
+                
+                <div class="card">
+                    <div>
+                        <div class="text"> <i class="fa fa-book " style="color:white;"></i>  &nbsp; <a href="index.html" style="text-decoration: none;color: white;">Courses</a></div>
+                        <div class="cardName">courses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-tick" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="text"> <i class="fa fa-calendar " style="color:white;"></i>  &nbsp; <a href="timetable.html" style="text-decoration: none;color: white;">Time Table</a></div>
+                        <div class="cardName"> courses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-tick" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                      <div class="text">   <i class="fa fa-pencil-square-o" style="color:white;"></i> &nbsp; <a href="declareStudent.html" style="text-decoration: none;color: white;">Claim Students</a></div>
+                        <div class="cardName">Students</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-hour" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+             <h2 style="text-align: center;">COURSE</h2>
+            <div class="details">
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Add Exams</h2>
+                    </div>
+                    <div class="contactForm ">
+                         <div class="formBox">
+                            <div class="inputBox w50">
+                                <input type="text" required>
+                                <span> Name <b style="color: red;">*</b></span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="number" required>
+                                <span> VH <b style="color: red;"> *</b></span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="email" required>
+                                 <span> Faculity<b style="color: red;"> *</b></span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="text" required>
+                                 <span> Lecturer <b style="color: red;"> *</b></span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="number" required>
+                              <span> Credits <b style="color: red;"> *</b></span>
+                            </div>
+                             <div class="inputBox w50">
+                                 
+                                <input type="file" required>
+                                
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="submit" value="Save">
+                                <input type="submit" value="cancel">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rencetOrders">
+                    <div class="cardHeader">
+                        <h2 style="text-align: center;">Exams</h2>
+                        <!-- <a href="#" class="btn">View All</a> -->
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>VH</th>
+                                <th>Faculity</th>
+                                <th>Lectures</th>
+                                <th>Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Linux</td>
+                                <td>45</td>
+                                <td>BST</td>
+                                <td>Irakoze</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Accounting</td>
+                                <td>60</td>
+                                <td>BAM</td>
+                                <td>Kanyamunza</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Linux</td>
+                                <td>45</td>
+                                <td>BST</td>
+                                <td>Irakoze</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Accounting</td>
+                                <td>60</td>
+                                <td>BAM</td>
+                                <td>Kanyamunza</td>
+                                <td>4</td>
+                            </tr><tr>
+                                <td>Linux</td>
+                                <td>45</td>
+                                <td>BST</td>
+                                <td>Irakoze</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Accounting</td>
+                                <td>60</td>
+                                <td>BAM</td>
+                                <td>Kanyamunza</td>
+                                <td>4</td>
+                            </tr><tr>
+                                <td>Linux</td>
+                                <td>45</td>
+                                <td>BST</td>
+                                <td>Irakoze</td>
+                                <td>3</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div>
+                    <a href="#" class="btn">Update Exam</a>
+                    <a href="#" class="btn">delete Exam</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

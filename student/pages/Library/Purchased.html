@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Purchased.css">
+
+</head>
+<body>
+     <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-mortar-board" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Student</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-dashboard" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../course/Courses.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Books.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://fin-connect.bi/FinConnect/Account/Login">
+                        <span class="icon"><i class="fa fa-dollar" aria-hidden="true"></i></span>
+                        <span class="title">Payment issues</span>
+                    </li>
+                    </a>
+                <li>
+                    <a href="../../attendance/Attendance.html">
+                        <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                        <span class="title">Attendances</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../Login/index.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <h2 style="text-align: center;">Library Management</h2>
+                <div class="user">
+                    <img src="image/user.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers"><a href="Books.html" class="corps-ite">Books</a></div>
+                        <div class="cardName">103789 books available</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers"><a href="Libary.html" class="corps-ite">Go to Library</a></div>
+                        <div class="cardName">21 books available</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div>
+                        <div class="numbers"><a href="Purchased.html" class="corps-ite">Purchase list</a></div>
+                        <div class="cardName">23 books</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="details">
+                <div class="recentCustomers">
+                   
+                <div class="rencetOrders">
+                    <div class="cardHeader">
+                        <h2> List of books purchased</h2>
+        
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Edition House</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                                <th>Read it</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                            <tr>
+                                <td>To kill a Mockningbird</td>
+                                <td>Harper Lee</td>
+                                <td>Grand central</td>
+                                 <td>With cases studies,this book challenges to make your code clean</td>
+                                <td>Added on 01/05/2021</td>
+                                <td>Read</td>
+                                
+                            </tr>
+                           
+                            <tr>
+                                <td>One hundred years of solitude</td>
+                                <td>Gabriel Garcia</td>
+                                <td>Lufti ozkok</td>
+                                <td>With cases studies,this book challenges to make your code clean</td>
+                                <td>Added on 30/04/2021</td>
+                                <td>Read</td>
+                            </tr> 
+            
+                             <tr>
+                               <td>Code complete</td>
+                                <td>Steve McConnel</td>
+                                <td>Grand central</td>
+                                <td>With cases studies,this book challenges to make your code clean</td>
+                                <td>Added on 28/04/2021</td>
+                                <td>Read</td>
+                            </tr>
+                            
+                             <tr>
+                               <td>The pragmatic programmer</td>
+                                <td>Steve McConnel</td>
+                                <td>Grand central</td>
+                                 <td>With cases studies,this book challenges to make your code clean</td>
+                                <td>Added on 20/04/2021</td>
+                                <td>Read</td>
+                            </tr>
+                             <tr>
+                               <td>Code Simplicity</td>
+                                <td>Max Kanat</td>
+                                <td>Grand central</td>
+                                <td>With cases studies,this book challenges to make your code clean</td>
+                                <td>Added on 07/04/2021</td>
+                                <td>Read</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

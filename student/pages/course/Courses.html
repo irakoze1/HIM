@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Courses.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-mortar-board" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Student</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa fa-dashboard" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Courses.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Library/Books.html">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://fin-connect.bi/FinConnect/Account/Login">
+                        <span class="icon"><i class="fa fa-dollar" aria-hidden="true"></i></span>
+                        <span class="title">Payment issues</span>
+                    </li>
+                    </a>
+                <li>
+                    <a href="../attendance/Attendance.html">
+                        <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                        <span class="title">Attendances</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../../index.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../Login/index.html">
+                        <span class="icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Change Password </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <h2 style="text-align: center;">Courses Management</h2>
+                <div class="user">
+                    <img src="image/user.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers"><a class="corps-items" href="Courses.html">Courses</a></div>
+                        <div class="cardName">22</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers"><a class="corps-items" href="Mark.html">Marks</a></div>
+                        <div class="cardName">Available</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div>
+                        <div class="numbers"><a class="corps-items" href="Syllabus.html">Syllabus</a></div>
+                        <div class="cardName">Available</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers"><a class="corps-items" href="Timetable.html">Time table</a></div>
+                        <div class="cardName">This week</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="details">
+                <div class="recentCustomers">
+                   
+                <div class="rencetOrders">
+                    <div class="cardHeader">
+                        <h2>List of courses</h2>
+                    
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Name</th>
+                                <th>VHP</th>
+                                <th>Faculity</th>
+                                <th>Lecturers</th>
+                                <th>Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gcs-3501</td>
+                                <td>Ethics and projects management</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>Bucumi Jean Sylvain</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Gcs-3502</td>
+                                <td>Gestion des projets informatiques</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>Bucumi Jean Sylvain</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Gcs-3503</td>
+                                <td>Technics multimedia et infographie</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>Mangope jean bernard</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                 <td>Gcs-3504</td>
+                                <td>Atelier de genie logiciel</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>Nduwimana jean de dieu</td>
+                                <td>4</td>
+                            </tr> 
+                            <tr>
+                                 <td>Gcs-3505</td>
+                                <td>Language de compilation</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>Manirakiza Claude</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                 <td>Gcs-3506</td>
+                                <td>IHM</td>
+                                <td>45</td>
+                                <td>GL</td>
+                                <td>Ndayishimiye Arsene</td>
+                                <td>3</td>
+                            </tr><tr>
+                                <td>Gcs-3507</td>
+                                <td>Developement internet</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>Nyandwi Ildegald</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Gcs-3508</td>
+                                <td>Introduction aux systemes clients/serveeur</td>
+                                <td>45</td>
+                                <td>GL</td>
+                                <td>Bucumi Jean Sylvain</td>
+                                <td>3</td>
+                            </tr><tr>
+                                 <td>Gcs-3509</td>
+                                <td>Methodes comparees</td>
+                                <td>30</td>
+                                <td>GL</td>
+                                <td>Niyonkuru Dieudonne</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Gcs-3610</td>
+                                <td>Mobile application development</td>
+                                <td>45</td>
+                                <td>GL</td>
+                                <td>Manzi Casias</td>
+                                <td>3</td>
+                            </tr>
+                             <tr>
+                                <td>Gcs-3611</td>
+                                <td>Advanced web programming &amp design</td>
+                                <td>45</td>
+                                <td>GL</td>
+                                <td>Ndayirata Egide</td>
+                                <td>3</td>
+                            </tr>
+                             <tr>
+                                <td>Gcs-3612</td>
+                                <td>Csharp programming</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>Bucumi Jean Sylvain</td>
+                                <td>4</td>
+                            </tr>
+                             <tr>
+                                <td>Gcs-3613</td>
+                                <td>Entreprenariat</td>
+                                <td>30</td>
+                                <td>GL</td>
+                                <td>Irakoze Thierry</td>
+                                <td>2</td>
+                            </tr>
+                             <tr>
+                                <td>Gcs-3614</td>
+                                <td>Gestion des organisation</td>
+                                <td>30</td>
+                                <td>GL</td>
+                                <td>Ntacizana Leonard</td>
+                                <td>2</td>
+                            </tr>
+                             <tr>
+                                <td>Gcs-3615</td>
+                                <td>Projet realisation</td>
+                                <td>60</td>
+                                <td>GL</td>
+                                <td>-</td>
+                                <td>4</td>
+                            </tr>
+                             <tr>
+                                <td>Gcs-3616</td>
+                                <td>Internship report</td>
+                                <td>45</td>
+                                <td>GL</td>
+                                <td>-</td>
+                                <td>3</td>
+                            </tr>
+                             <tr>
+                                <td>Gcs-3617</td>
+                                <td>Project writing</td>
+                                <td>150</td>
+                                <td>GL</td>
+                                <td>-</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

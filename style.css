@@ -1,0 +1,773 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    scroll-behavior: smooth;
+}
+.containe
+{
+    position: relative;
+    width: 100%;
+}
+.navigation
+{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #003147;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active 
+{
+    width: 60px;
+}
+.navigation ul 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li 
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover
+{
+    background: #03a9f4;
+}
+.navigation ul li:nth-child(1)
+{
+    margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover
+{
+    background: transparent;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon .fa
+{
+    color: #fff;
+    font-size: 24px;
+}
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.main
+{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+.main.active 
+{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+.main .topbar
+{
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.toggle::before
+{
+    content: '\f0c9';
+    font-family: FontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+}
+.search
+{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+.search label
+{
+    position: relative;
+    width: 100%;
+}
+.search label input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.search label .fa
+{
+    position: absolute;
+    left: 15px;
+    top: 1px;
+}
+.user
+{
+    position: relative;
+    max-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.user img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardBox
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+.cardBox .card
+{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+
+}
+.cardBox .card:hover
+{
+    box-shadow: 40px 40px 40px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+
+.cardBox .card .numbers
+{
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+.cardBox .card .iconBox
+{
+    font-size: 2.5em;
+    color: #03a9f4;
+}
+.details
+{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+.details .rencetOrderslist
+{
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+.cardHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader h2
+{
+    font-weight: 600;
+}
+.btn
+{
+    position: relative;
+    padding: 5px 10px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;    
+}
+.details table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.details table thead td
+{
+    font-weight: 600;
+}
+.details .rencetOrderslist table tr
+{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.details .rencetOrderslist table tbody tr:last-child
+{
+    border-bottom: none;
+}
+.details .rencetOrderslist table tbody tr:hover
+{
+    background: #03a9f4;
+    color: #fff;
+}
+.details .rencetOrderslist table tr td
+{
+    padding: 10px 20px;
+    text-align: center;
+}
+.details .rencetOrderslist table thead tr td:last-child,
+.details .rencetOrderslist table tbody tr td:last-child
+{
+    text-align: center;
+}
+.details .rencetOrderslist table thead tr td:nth-child(2),
+.details .rencetOrderslist table tbody tr td:nth-child(2)
+{
+    text-align: center;
+}
+.details .rencetOrderslist table thead tr td:nth-child(3),
+.details .rencetOrderslist table tbody tr td:nth-child(3)
+{
+    text-align: center;
+}
+.status
+{
+    position: relative;
+    padding: 2px 4px;
+    background: #f00;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.cardBox .card:first-child .delivered
+{
+    background: #8de02c;
+}
+.delivered
+{
+    background: #8de02c;
+}
+.red
+{
+    background: #f00;
+}
+.black
+{
+    background: #000;
+}
+.pending
+{
+    background: #021af7;
+}
+.blue
+{
+    background: #03a9f4;
+}
+.details .recentCustomers
+{
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+.details .recentCustomers .imgBx
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.details .recentCustomers .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details .recentCustomers table tr td h4 span
+{
+    font-size: 14px;
+    color: #999;
+}
+.details .recentCustomers table tr:hover,
+.details .recentCustomers table tr:hover td h4 span
+{
+    background: #03a9f4;
+    color: #fff;
+}
+.details .recentCustomers table tr td
+{
+    padding: 7px 10px;
+}
+.details .recentCustomers table tr td h4
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.details .recentCustomers table tr td h4 span
+{
+    font-size: 14px;
+    color: #999;
+}
+/* calendar */
+
+.sece
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    overflow: hidden;
+}
+.sece::before
+{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    border-radius: 50%;
+}
+.sece::after
+{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    border-radius: 50%;
+}
+.boxs
+{
+    position: relative;
+    z-index: 1000;
+}
+.containers
+{
+    position: relative;
+    width: 600px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dycalendar
+{
+    width: 100%;
+    padding: 20px;
+}
+#dycalendar table
+{
+    width: 100%;
+    margin-top: 40px;
+    border-spacing: 5px;
+}
+#dycalendar table tr:nth-child(1) td
+{
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#dycalendar table td
+{
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#dycalendar table td:hover
+{
+    background: #2bd2ff;
+    color: #000 !important;
+}
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date
+{
+    background: #2bd2ff !important;
+    color: #000 !important;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn
+{
+    position: absolute;
+    background: #111;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    left: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn
+{
+    position: absolute;
+    background: #111;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    right: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.dycalendar-month-container .dycalendar-span-month-year
+{
+    color: #111;
+    font-size: 1.5em;
+    font-weight: 600;
+    position: absolute;
+    left: 40%;
+}
+/* end calendar */
+.copyright
+{
+    position: absolute;
+    bottom: 5px;
+    color: #111;
+}
+@media (max-width:992px)
+{
+    .navigation
+    {
+        left: -300px;
+    }
+    .navigation.active
+    {
+        left: 0;
+        width: 300px;
+    }
+    .copyright
+    {
+        margin-top: 2rem;
+    }
+    .main
+    {
+        width: 100%;
+        left: 0;
+    }
+    .main.active
+    {
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+    .cardBox
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    section
+    {
+        width: 100%;
+    }
+    .sece 
+    {
+        width: 400px;
+    }
+    .dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn {
+        position: absolute;
+        left: 400px;
+    }
+    .dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn
+    {
+        position: absolute;
+        left: 100px !important;
+    }
+}
+@media (max-width: 768px)
+{
+    .details
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader h2
+    {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px)
+{
+    .cardBox
+    {
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 10px;
+    }
+    .details .rencetOrderslist
+    {
+        overflow-x: auto;
+    }
+    .details .rencetOrderslist table
+    {
+        width: 600px;
+    }
+    .navigation
+    {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigation.active
+    {
+        width: 100%;
+        left: 0;
+    }
+    .toggle.active
+    {
+        position: fixed;
+        z-index: 10000;
+        right: 0;
+        left: initial;
+    }
+    .toggle.active::before
+    {
+        color: #fff;
+    }
+    .main,
+    .main.active
+    {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* new details 2 */
+
+section
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 50px;
+}
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+}
+.container .card .box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 10;
+    border-radius: 10px;
+}
+.percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 100;
+}
+.percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.percent .number h2
+{
+    color: #111;
+    font-weight: 700;
+    font-size: 50px;
+}
+.percent .number h2 span
+{
+    font-size: 24px;
+}
+.text 
+{
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px 20px 10px;
+    background: #f00;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    z-index: 1;
+    pointer-events: none;
+    transition: bottom 0.5s , z-index 0s, transform 0.5s, padding 0.5s;
+    transition-delay: 0.5s,0.5s,0s,0.5s;
+    color: #111;
+}
+.card:hover .text 
+{
+    transition-delay: 0s,0.5s,0.5s,0s;
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50px);
+    padding: 10px 20px 10px;
+}
+.card:nth-child(1) .text 
+{
+    background: #ff0461;
+}
+.card:nth-child(2) .text 
+{
+    background: #2bd2ff;
+}
+.card:nth-child(3) .text 
+{
+    background: #18d539;
+}
+svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(255,255,255,0.05);
+    transform: translate(5px,5px);
+    stroke-linecap: round;
+}
+svg circle:nth-child(1)
+{
+    background: rgb(211, 74, 177);
+}
+
+svg circle:nth-child(2)
+{
+    stroke: #111;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 80px;
+}
+.card:nth-child(1) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440px - (440px * 90) / 100);
+    stroke: #f3035c;
+}
+.card:nth-child(2) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440px - (440px * 79) / 100);
+    stroke: #24b0d6;
+}
+.card:nth-child(3) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440px - (440px * 55) / 100);
+    stroke: #13b02f;
+}
